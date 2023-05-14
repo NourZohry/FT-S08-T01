@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "TheMixArabic";
+  src: url("../assets/fonts/TheMixArab-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TheMixArabic";
+  src: url("../assets/fonts/TheMixArab-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.1vw;
+}
+
+.navbar .nav-item {
+  margin-right: 5px;
+}
+.navbar * {
+  font-family: "TheMixArabic";
+  text-decoration: none;
+  color: #16151A;
+}
+.navbar .nav-items ul:first-child {
+  font-weight: bold;
+}
+.navbar .navbar-login-anchor-wrapper {
+  background-color: white;
+  border: 1px solid rgba(18, 17, 39, 0.12);
+  padding: 5px 30px;
+  border-radius: 24px;
+  margin-left: 30px;
+}
+.navbar .navbar-register-anchor-wrapper {
+  border: 1px solid rgba(18, 17, 39, 0.12);
+  padding: 5px 20px;
+  border-radius: 24px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 30px;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px -5px gold;
+  }
+  to {
+    box-shadow: 0 0 5px 5px gold;
+  }
+}
+.navbar .navbar-search-icon {
+  width: 25px;
+}
+.navbar .navbar-search-icon:hover {
+  cursor: pointer;
+}
+.navbar .navbar-brand > img {
+  height: 50px;
+  margin-right: 30px;
+}
+
+.navbar-theme {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.navbar-theme:hover {
+  cursor: pointer;
+}
+.navbar-theme.navbar-theme-purple {
+  background-color: #510B76;
+}
+.navbar-theme.navbar-theme-green {
+  background-color: #0B760F;
+}
+
+.background-color {
+  background-color: #510B76;
+}
+
+.color-offwhite {
+  background-color: #FAFAFA;
+}
+
+.supermarket-header {
+  color: white;
+}
+.supermarket-header * {
+  margin-bottom: 0px;
+}
+.supermarket-header h3 {
+  font-size: 1.267vw;
+}
+.supermarket-header .vertical-line {
+  width: 1px;
+  height: 15px;
+  background-color: white;
+}
+.supermarket-header img {
+  width: 12px;
+  height: 12px;
+}
+.supermarket-header :not(:last-child) {
+  margin-left: 10px;
+}
+
+.supermarket-text {
+  color: white;
+}
+.supermarket-text h1 {
+  font-size: 4vw;
+}
+.supermarket-text .orange-circle {
+  width: 1.58vw;
+  height: 1.58vw;
+  background-color: #F58026;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  margin-right: 2vw;
+}
+.supermarket-text h2 {
+  font-size: 1.25vw;
+  line-height: 160%;
+  margin-top: 22px;
+}
+
+.statistics h1 {
+  font-size: 3.16vw;
+}
+
+.info-col {
+  color: white;
+}
+.info-col .color-offwhite {
+  color: black;
+  height: 100%;
+}
+.info-col * > h1 {
+  font-size: 1.425vw;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.info-col * > p {
+  font-family: "TheMixArabic";
+  font-size: 1.267vw;
+  font-weight: bold;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 30px;
+  border: none;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+}
+.card h1 {
+  color: #16151A;
+  font-size: 1.74vw;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.card p {
+  font-family: "TheMixArabic";
+}
+
+.bg-color {
+  background-image: url("../assets/images/bg-color.png");
+  background-size: 60% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0px;
+}
+
+.benefits h1 {
+  color: #16151A;
+}
+.benefits h2 {
+  color: #565666;
+  font-size: 1.425vw;
+}
+
+.margin-x50 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.margin-x100 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.margin-x200 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.margin-y70 {
+  margin-top: 100px;
+}
+
+#popup-container {
+  position: fixed;
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  right: 25%;
+  padding: 20px;
+  border-radius: 20px;
+  visibility: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+#popup-container .popup-close:hover {
+  cursor: pointer;
+}
+#popup-container .popup-close.popup-x {
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+}
+#popup-container .popup-close.popup-btn {
+  position: absolute;
+  bottom: 10px;
+}
+
+#popup-dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.3;
+  visibility: hidden;
+  z-index: 3;
+}
+
+#read-more-button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
